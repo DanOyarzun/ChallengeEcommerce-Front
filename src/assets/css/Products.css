@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.products-container {
+  display: flex;
+  overflow-x: hidden;
+}
+
+.sidebar {
+  flex: 0 0 20%; /* Fija el Sidebar al 20% */
+  height: 100vh; /* Altura completa de la ventana */
+  background-color: #f8f9fa;
+}
+
+.products-content {
+  flex: 0 0 80%; /* Fija el contenido de productos al 80% */
+  padding: 20px; /* Espaciado interno */
+  overflow-y: auto; /* Agrega scroll si es necesario */
+  max-width: 100%;
+}
+.logo {
+  height: 50px;
+  width: 50px;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fadeInUp 0.9s ease-in-out forwards;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+@keyframes scale-in {
+  0% {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-scale-in {
+  animation: scale-in 0.3s ease-out forwards;
+}

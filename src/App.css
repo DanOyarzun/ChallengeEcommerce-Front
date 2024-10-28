@@ -1,0 +1,8 @@
+.custom {
+  height: 200px;
+  object-fit: contain;
+}
+.custom-search {
+  height: 20px;
+  width: 20px;
+}
